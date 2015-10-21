@@ -1,0 +1,83 @@
+#slider_bg, #slider_container {
+		width:100%;
+		height:275px;
+		margin:0;
+		position:relative;
+		box-sizing:border-box;
+		-moz-box-sizing:border-box;
+	}
+	#slider_bg, a.slider_changer, #slider_desc, #slider_changers {
+		background-position:center center;
+		background-size:100%;
+		background-repeat:no-repeat;
+		position:relative;
+		box-sizing:border-box;
+		-moz-box-sizing:border-box;
+	}
+	#slider_bg {
+		z-index:10;
+	}
+	#slider_container {
+		background-color:black;
+	}
+	#slider_desc {
+		height:50px;
+		margin:0;
+		position:relative;
+		box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		margin-top:-50px;
+		background-size:30%;
+		padding:7px 0 7px 7px;
+		box-sizing:border-box;
+		-moz box-sizing:border-box;
+		color:#dbdbdb;
+		font-size:1.05em;
+		z-index:200;
+		text-align:left;
+		width:73%;
+	}
+	#slider_desc h1, #content #slider_desc a {
+		color:white;
+		font-weight:normal;
+		margin:0;
+		padding:0;
+	}
+	#content #slider_desc h1 {
+		font-size:1.8em;
+		display:block;
+		background:none;
+		padding-left:0;
+		line-height:20px;
+		height:20px;
+		margin:0;
+	}
+	#slider_desc a:hover {
+		text-decoration:underline;
+	}
+	#slider_changers {
+		padding:16px 14px 16px 16px;
+		margin:-50px auto 0 auto;
+		text-align:right;
+		width:100%;
+		height:50px;
+		box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		z-index:100;
+		background-image:url("/ttuisd/images/black_50.png");
+	}
+	a.slider_changer {
+		cursor:pointer;
+		display:inline-block;
+		width:15px;
+		height:15px;
+		background-image:url("/ttuisd/images/not_selected.png");
+		margin:2px;
+		z-index:300;
+	}
+	a.slider_changer span {
+		display:none;
+	}
+	a.slider_changer:hover, a.slider_changer.selected {
+		background-image:url("/ttuisd/images/selected.png");
+	}
